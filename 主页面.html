@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>主页面main menu</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, rgb(124, 244, 255), rgb(136, 255, 198));
+        color: #333;
+        line-height: 1.6;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height:100vh ;
+    }
+    .cards-container{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        width: auto;
+        margin:10px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 20px black;
+        padding: 20px;
+        text-align: center;
+        cursor: pointer; /* 鼠标样式变为指针 */
+        transition: transform 0.3s ease; /* 过渡效果 */
+    }
+    .card-text{
+        display:inline;
+        margin-left: -8px;
+    }
+    .card:hover {
+        transform: translateY(-5px); /* 鼠标悬停时轻微上移 */
+    }
+    .picture{
+        border-radius:50%;
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: 0 auto 20px;
+    }
+</style>
+<body>
+    <div class="cards-container">
+        <div class="card">
+            <a href="file:///D:/web/Basic%20Edition.html"><img src="https://tse3-mm.cn.bing.net/th/id/OIP-C.G8ZVKXM40b2ZiYwT8sCYhgHaHa?w=201&h=203&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="picture"></a>
+            <p class="card-text">低配版</p>
+        </div>
+        <div class="card">   
+            <a href="file:///D:/web/Medium%20Edition.html"><img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.C93sJDk9ZPo4akmE9dd-kQHaHa?w=207&h=207&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="picture" ></a>      
+            <p class="card-text">中配版</p>
+        </div>
+        <div class="card">   
+            <a href="file:///D:/web/Premium%20Edition.html"><img src="https://img.ixintu.com/download/jpg/202001/e34e561d07997033a2f769b399e3cd80.jpg!con" class="picture" ></a>      
+            <p class="card-text">高配版</p>
+        </div>
+    </div>
+</body>
+</html>
